@@ -44,12 +44,16 @@ print(df)
 # print(df)
 
 # # index지정 해제-drop=True:index를 삭제함,inplace=True:완전반영시켜져 저장
+# df.reset_index(inplace=True) : index를 컬럼으로 옮기고 새로운 인덱스 만듬
+# df.reset_index(drop=True, inplace=True) :index 삭제
 # df=pd.DataFrame(data,index=['1번','2번','3번','4번','5번','6번','7번','8번'])
 # df.index.name='지원번호'
 # # print(df.reset_index())
 # # print(df.reset_index(drop=True))
 # print(df.reset_index(drop=True,inplace=True))
 # print(df)
+
+
 
 # sort_index:index정렬,inplace=True:완전지정되어 저장
 # asecnding=True:순차정렬, ascending=false:역순정렬
